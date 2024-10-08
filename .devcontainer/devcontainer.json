@@ -2,9 +2,16 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/go
 {
 	"name": "Go",
+	// Full list at: https://mcr.microsoft.com/en-us/product/devcontainers/go/tags
 	"image": "mcr.microsoft.com/devcontainers/go:1.19",
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"docker-in-docker": {
+			"version": "latest",
+			"moby": true,
+			"dockerDashComposeVersion": "v1"
+		}
+	},
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -14,7 +21,6 @@
 				"golang.go"
 			]
 		}
-	},
-	"features": {}
+	}
 	// "postStartCommand": ["go", "build"]
 }

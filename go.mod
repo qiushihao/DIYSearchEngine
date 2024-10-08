@@ -46,7 +46,7 @@ require (
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
-	github.com/yanyiwu/gojieba v1.3.0 // indirect
+	github.com/yanyiwu/gojieba v1.4.4 // indirect
 	golang.org/x/arch v0.3.0 // indirect
 	golang.org/x/crypto v0.10.0 // indirect
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
