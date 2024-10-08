@@ -2,7 +2,8 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/go
 {
 	"name": "Go",
-	"image": "mcr.microsoft.com/devcontainers/go:1.19-bookworm",
+	// Full list at: https://mcr.microsoft.com/v2/devcontainers/go/tags/list
+	"image": "mcr.microsoft.com/devcontainers/go:1.19",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
