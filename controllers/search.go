@@ -196,7 +196,7 @@ func Search(c *gin.Context) {
 
   latency := time.Since(t)
   c.HTML(200, "search.tpl", gin.H{
-    "title":   "翰哥搜索",
+    "title":   "我的搜索",
     "time":    time.Now().Format("2006-01-02 15:04:05"),
     "values":  values,
     "keyword": keyword,
