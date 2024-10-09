@@ -13,14 +13,14 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
-  # # Redis 服务配置
-  # redis:
-  #   image: redis:latest
-  #   restart: always
-  #   ports:
-  #     - "6379:6379"
-  #   volumes:
-  #     - redis_data:/data
+  # Redis 服务配置
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
 
   # # 项目服务配置
   # ese:

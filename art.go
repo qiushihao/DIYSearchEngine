@@ -56,7 +56,7 @@ func (a Art) Init() {
 	result8 := db.DbInstanceDic.Exec("CREATE TABLE `word_dics` (   `id` int unsigned NOT NULL AUTO_INCREMENT,   `name` varchar(255) DEFAULT NULL,   `positions` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,   PRIMARY KEY (`id`),   UNIQUE KEY `name` (`name`) ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci")
 	fmt.Println("建表结果: ", "word_dics", result8.RowsAffected)
 
-	result9 := realDB.Exec("INSERT INTO `pages_00` (`url`, `host`) VALUES (?, NULL)", "https://www.hao123.com")
+	result9 := realDB.Exec("INSERT INTO `pages_00` (`url`, `host`) VALUES (?, ?)", "https://www.hao123.com", "www.hao123.com")
 	fmt.Println("插入结果: ", "pages_00", result9.RowsAffected)
 
 	fmt.Println("数据库初始化完成")
